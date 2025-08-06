@@ -46,3 +46,12 @@ The project is a work in progress and is not yet complete.
 - [ ] User following
 - [ ] User feed (posts from users you follow)
 - [ ] User flair
+
+## What did I achieve
+- I was able to deploy the web app to Vercel with Auth working as expected.
+- I was able to fix the bug where users could vote more than once on a post, this was done by using the UNIQUE constraint in the votes table which checks to ensure that the new record that is associated with a post id also has a unique user id.
+
+## What did I not achieve
+- I was unable to fix the bug with post pages not displaying the page title as the post title, I initially tried to achieve this using the generateMedadata function where I queried the DB to fetch the post title, this however did not work and I did not have time to troubleshoot further.
+- I was unable to implement the error message when a user tries to like a post while not signed in, this was purely due to the tight deadline given.
+- I was unable to incorporate TipTap due to the reason given above.
